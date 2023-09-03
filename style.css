@@ -1,0 +1,31 @@
+div .container {
+    border: solid 3px rgb(235, 202, 162);
+    margin: 1rem;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(105, 64, 64);
+    padding: 1rem;
+    font-size: 18px;
+}
+
+p {
+    align-content: flex-start;
+}
+
+#image > div {
+    height: 100px;
+    width: 125px;
+    padding: 100px;
+    background-size: cover;
+    position: fixed;
+    left: 1275px;
+    top: 95px;
+}
+
+span {
+    float: left;
+}
+
