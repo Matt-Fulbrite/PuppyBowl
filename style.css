@@ -2,11 +2,12 @@ div .container {
     border: solid 3px rgb(235, 202, 162);
     margin: 1rem;
     width: 250px;
-    height: 250px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(105, 64, 64);
+    color: white;
     padding: 1rem;
     font-size: 18px;
 }
@@ -20,12 +21,27 @@ p {
     width: 125px;
     padding: 100px;
     background-size: cover;
-    position: fixed;
-    left: 1275px;
-    top: 95px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid 3px rgb(235, 202, 162);
 }
 
 span {
     float: left;
 }
 
+.details {
+    border: solid 3px rgb(235, 202, 162);
+    background-color: rgb(105, 64, 64);
+    color: white;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/040/original/vector-dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

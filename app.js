@@ -1,5 +1,6 @@
 const span = document.querySelector('#puppyDetails')
 const image = document.querySelector('#image')
+const detail = document.querySelector('#detail')
 
 let theData = [];
 
@@ -8,7 +9,6 @@ async function puppyData () {
     const response = await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2307-ftb-et-web-ft/players/')
     const json = await response.json()
     theData = json.data.players
-    console.log(theData)
     render()    
 }
 
@@ -22,20 +22,31 @@ function render() {
     }).join('')
     
     span.innerHTML = html
-    console.log(hash)
    
     const findImg = theData.find((rendata) => {
         return rendata.id === hash
     })
 
     let imageHtml = ''
+    let detailHTML = ''
 
     if (findImg) {
-        imageHtml = `<div style="background-image:url(${findImg.imageUrl})"></div>`
+        imageHtml = `
+        <div style="background-image:url(${findImg.imageUrl})"></div>
+        `
     }
-    console.log(imageHtml)
+    if (findImg) {
+        detailHTML = `
+        <span class = "details">
+            <div>${findImg.name}</div>
+            <div>${findImg.breed}</div>
+            <div>${findImg.status}</div>
+        </div>
+        `
+    }
 
     image.innerHTML = imageHtml
+    detail.innerHTML =detailHTML
 }
 
 window.addEventListener('hashchange', () => {
