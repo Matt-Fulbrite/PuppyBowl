@@ -38,9 +38,9 @@ function render() {
     if (findImg) {
         detailHTML = `
         <span class = "details">
-            <div>${findImg.name}</div>
-            <div>${findImg.breed}</div>
-            <div>${findImg.status}</div>
+            <div>Name: ${findImg.name}</div>
+            <div>Breed: ${findImg.breed}</div>
+            <div>Status: ${findImg.status}</div>
         </div>
         `
     }

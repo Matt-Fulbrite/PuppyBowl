@@ -35,9 +35,9 @@ span {
     border: solid 3px rgb(235, 202, 162);
     background-color: rgb(105, 64, 64);
     color: white;
-    width: 250px;
+    width: 325px;
     height: 60px;
-    text-align: center;
+    text-align: left;
 }
 
 body {
